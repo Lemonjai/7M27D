@@ -1,0 +1,18 @@
+.social{
+  list-style-type: none;
+  text-align: center;
+
+  li{
+    display: inline;
+  }
+
+  i{
+    font-size: 270%;
+    margin: 1% 5% 7% 4%;
+    color: #2C2C2C;
+  }
+
+  i:hover{
+    color: #606060;
+  }
+}

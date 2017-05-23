@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway'); /*--- Nav Font --*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway'); /*--- Heading Font --*/
+
+@import 'font-awesome';
+@import 'intro';
+@import 'nav';
+@import 'parallax';
+@import 'social';
+@import 'footer';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height:100%;
+  width: 100%;
+}
+
+.clearfix{
+  clear: both;
+  height: 3%;
+}
+
+h2{
+  font-family: 'Raleway', serif;
+  font-size: 200%;
+  font-weight: 700;
+  color: #2C2C2C;
+  text-align: center;
+}
+
+p{
+  font-family: 'Raleway', serif;
+  color: #2C2C2C;
+  font-size: 140%;
+  line-height: 180%;
+  text-align: justify;
+  font-weight: 700;
+}
+
+img{
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.left-col{
+  width: 60%;
+  float: left;
+  margin: 4% 0 4% 4%;
+}
+
+.sidebar{
+  width: 26%;
+  float: right;
+  margin: 4%;
+
+  img{
+    border-radius: 50%;
+  }
+
+}
+
+.one-third-work{
+  width: 29.3333%;
+  padding: 2%;
+  float: left;
+}
+
+.one-third-work:hover{
+  opacity: .6;
+}
+
+.one-half-proj{
+  width: 46%;
+  padding: 2%;
+  float: left;
+}
+
+.one-third-work:hover{
+  opacity: .6;
+}
+
+.contact{
+  a{
+    color: #2C2C2C;
+  }
+
+  p{
+    text-align: center;
+    letter-spacing: 5px;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .intro{
+    background-size: cover;
+  }
+
+  .inner{
+    font-size: 120%;
+
+    .content{
+      h1{
+        font-size: 300%;
+      }
+    }
+  }
+
+  .sidebar img{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+
+  }
+
+  p{
+    font-size: 120%;      
+  }
+
+  h2{
+    font-size: 160%;
+  }
+  .left-col{
+    width: 96%;
+    margin: 0 0 3% 0;
+    padding: 0 2%;
+    float: left;
+  }
+  .sidebar{
+    width: 96%;
+    margin: 0 auto;
+    float: left;
+
+  }
+
+  img{
+    padding: 2%;
+  }
+
+  .one-third-work{
+    width: 96%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .one-half-proj{
+    width: 96%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .parallax{
+    display: none;
+  }
+
+  .social{
+    i{
+      font-size: 170%;
+    }
+  }
+}
+
+@media screen and (max-width: 699px) and (min-width: 320px){
+
+  .menu-icon{
+    padding: .5em .6em;
+  }
+
+  .banner{
+    padding-top: 0.2em;
+  }
+}
