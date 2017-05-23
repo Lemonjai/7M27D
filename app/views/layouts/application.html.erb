@@ -13,21 +13,35 @@
   </head>
 
   <body>
+
     <header>
       <span  class="menu-icon" onclick="openNav()">&#9776;</span>
       <p class="banner">7M27D - FullStack Developer</p>
       <nav id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <!-- <a href="#about">About Me</a> -->
           <%= link_to "About Me", root_path(:anchor => "about") %>
-          <a href="#work">Work</a>
+          <%= link_to "Work", root_path(:anchor => "work") %>
           <a href="#proj">Project</a>
           <a href="#blog">Blog</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
+
     <%= yield %>
+
+    
+  <footer>
+    <ul class="social">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li> 
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>  
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
+    </ul>
+  </footer>
+  <footer class="second">
+    <p>&copy; 7M27D</p>
+  </footer>
   </body>
 </html>
