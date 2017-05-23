@@ -19,7 +19,8 @@
       <nav id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <a href="#about">About Me</a>
+          <!-- <a href="#about">About Me</a> -->
+          <%= link_to "About Me", root_path(:anchor => "about") %>
           <a href="#work">Work</a>
           <a href="#proj">Project</a>
           <a href="#blog">Blog</a>
