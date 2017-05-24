@@ -16,16 +16,17 @@
 
   <section class="left-col">
     <h2>About Me</h2>
-    <hr>
+    <hr id="under_padding" width="10%">
     <p style="text-indent: 6%;">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. 
     </p>
-    <hr>
   </section>
 
 <a href="/#work" id="work"></a>
 <div class="clearfix"></div>
-  <h2>Work</h2>
+  <hr>
+  <h2 id="title_padding">Work</h2>
+  <hr id="under_padding" width="3%">
   <section class="one-third-work">
     <%= image_tag "wood-coffee-iphone-notebook.jpg" %>
   </section>
@@ -47,8 +48,9 @@
   
 <a href="/#proj" id="proj"></a>
 <div class="clearfix"></div>
-  <h2>Project</h2>
   <hr>
+  <h2 id="title_padding">Project</h2>
+  <hr id="under_padding" width="4%">
   <section class="one-half-proj">
     <%= image_tag"wood-coffee-iphone-notebook.jpg" %>
   </section>
@@ -61,11 +63,12 @@
   <section class="one-half-proj">
     <%= image_tag"pexels-photo-2.jpg" %>
   </section>
- 
+<hr> 
 <a href="/#blog" id="blog"></a>
 <div class="clearfix"></div>
   <section class="left-col">
     <h2>Blog</h2>
+    <hr width="4%" id="under_padding">
     <p style="text-indent: 6%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. 
 
     Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. <%= link_to "Read more", blogs_path %></p>
@@ -73,8 +76,11 @@
   <section class="sidebar">
     <section class="contact">
       <% @blogs.each do |blog| %>
-        <p><a href="#"><%= link_to blog.title, blog %></a></p>
-        <p><%= blog.created_at.strftime("%A, %b, %d") %></p>
+        <p>
+          <a class="blog_title" href="#"><%= link_to blog.title, blog %></a>
+          <br>
+          <%= blog.created_at.strftime("%A, %b, %d") %>
+        </p>
       <% end %>
     </section>
   </section>
@@ -87,6 +93,7 @@
 
 <div class="clearfix"></div>
   <h2>Contact Me</h2>
+  <hr id="under_padding" width="7%">
   <section class="contact">
     <p>My name is <a href="mailto:leo@test.com">Leo Cheung</a><br>1888-888-8888<br>123 Fake Street, Toronto, On</p>
   </section>
