@@ -24,7 +24,7 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new blog_params
+    @project = Project.new project_params
 
     if @project.save
       redirect_to @project, notice: "Project has been saved!!!"

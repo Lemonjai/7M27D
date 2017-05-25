@@ -40,7 +40,7 @@ class WorksController < ApplicationController
 
   private
     def work_params
-      params.require(:work).permit(:title, :content)
+      params.require(:work).permit(:title, :content, :img)
     end
 
     def find_post
