@@ -80,11 +80,11 @@
   <section class="sidebar">
     <section class="contact">
       <% @blogs.each do |blog| %>
-        <p>
-          <a class="blog_title" href="#"><%= link_to blog.title, blog %></a>
-          <br>
-          <%= blog.created_at.strftime("%A, %b, %d") %>
-        </p>
+        <div class="post">
+          <p class="date"><%= blog.created_at.strftime('%A, %B, %d') %></p>
+          <h2><%= link_to blog.title, blog %></h2>
+          <hr>
+        </div>
       <% end %>
     </section>
   </section>
