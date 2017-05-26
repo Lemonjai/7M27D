@@ -1,3 +1,8 @@
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
 @import url('https://fonts.googleapis.com/css?family=Raleway'); /*--- Nav Font --*/
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway'); /*--- Heading Font --*/
 
@@ -7,6 +12,7 @@
 @import 'parallax';
 @import 'social';
 @import 'footer';
+@import 'blogs';
 
 html, body {
   margin: 0;

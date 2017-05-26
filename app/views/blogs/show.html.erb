@@ -1,9 +1,30 @@
-<%= @blog.title %>
-<br>
-<%= @blog.content %>
+<div class="clearfix"></div>
+<div class="clearfix"></div>
+<div class="clearfix"></div>
 
-<br>
-<br>
+<div id="posts_wrapper" class="skinny_wrapper">
+  <div class="post">
+    <p class="date"><%= @blog.created_at.strftime('%A, %B, %d') %></p>
+    <h1><%= @blog.title %></h1>
+    <hr>
+  </div>
 
-<%= link_to "Edit", edit_blog_path(@blog) %>
-<%= link_to "Delete", blog_path(@blog), method: :delete, data: {confirm: "Are you sure you wanted to delete this post?"} %>
+  <div id="content">
+    <p><%= @blog.content %></p>
+  </div>
+  
+  <div class="post">
+    <hr>
+  </div>
+
+  <div id="share_box">
+    <p>Share "<%= @blog.title %>"</p>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+  </div>
+
+  <%= link_to "Edit", edit_blog_path(@blog) %>
+  <%= link_to "Delete", blog_path(@blog), method: :delete, data: {confirm: "Are you sure you wanted to delete this post?"} %>
+</div>
+

@@ -1,0 +1,66 @@
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
+.page_title{
+  font-weight: 700;
+  font-size: 2rem;
+  color: $dark;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid $border;
+  padding: 2em 0;
+  text-shadow: none;
+}
+
+.skinny_wrapper{
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.date{
+  font-size: .85em;
+  margin-bottom: 2em;
+  color: $light;
+  text-align: center;
+}
+
+.post{
+  hr{
+    display: block;
+    width: 3em;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid $highlight;
+    margin: 2rem auto;
+  }
+
+  h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: $dark;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: none;
+  }
+
+  h2{
+    font-weight: 700;
+    a{
+      text-decoration: none;
+      color: $dark;
+    }
+  }
+}
+
+#share_box{
+  p{
+    text-align: center;
+    font-size: 1em;
+    a{
+      text-decoration: none;
+    }
+  }
+}

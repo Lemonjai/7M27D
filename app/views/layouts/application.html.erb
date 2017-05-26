@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portv1</title>
+    <title>7D27M - Fullstack Developer</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,14 +31,16 @@
 
     <%= yield %>
     
-    <footer>
-      <ul class="social">
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-google-plus"></i></a></li> 
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>  
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
-      </ul>
-    </footer>
+    <% if current_page?(root_path) %>
+      <footer>
+        <ul class="social">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li> 
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>  
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
+        </ul>
+      </footer>
+    <% end %>
     <footer class="second">
       <p>&copy; 7M27D</p>
     </footer>
