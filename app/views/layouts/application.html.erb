@@ -20,11 +20,19 @@
       <nav id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <%= link_to "Who Am I", root_path(:anchor => "about") %>
-          <%= link_to "Work", root_path(:anchor => "work") %>
-          <%= link_to "Project", root_path(:anchor => "proj") %>
-          <%= link_to "Blog", root_path(:anchor => "blog") %>
-          <%= link_to "Contact", root_path(:anchor => "contact") %>
+
+          <% if current_page?(root_path) %>
+            <%= link_to "Who Am I", root_path(:anchor => "about") %>
+            <%= link_to "Work", root_path(:anchor => "work") %>
+            <%= link_to "Project", root_path(:anchor => "proj") %>
+            <%= link_to "Blog", root_path(:anchor => "blog") %>
+            <%= link_to "Contact", root_path(:anchor => "contact") %>
+          <% else %>
+            <%= link_to "Home", root_path %>
+            <%= link_to "Blog", blogs_path %>
+            <%= link_to "Project", projects_path %>
+          <% end %>
+
         </div>
       </nav>
     </header>
