@@ -1,1 +1,15 @@
-<h1>Works</h1>
+<div class="clearfix"></div>
+<div class="clearfix"></div>
+<h1 class="page_title">Work</h1>
+
+<div id="posts_wrapper" class="skinny_wrapper">
+  <% @works.each do |work| %>
+    <div class="post">
+      <p class="date"><%= work.created_at.strftime('%A, %B, %d') %></p>
+      <h2><%= link_to work.title, work %></h2>
+      <hr>
+    </div>
+  <% end %>
+</div>
+
+<%= will_paginate @works %>
