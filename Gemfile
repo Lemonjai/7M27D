@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+ruby "2.4.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
 # Use postgresql as the database for Active Record
@@ -28,7 +28,9 @@ gem 'jbuilder', '~> 2.5'
 # Font awesome gem
 gem "font-awesome-rails"
 gem 'rails_12factor', group: :production
-ruby "2.4.0"
+
+gem 'pygments.rb'
+gem 'redcarpet'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
