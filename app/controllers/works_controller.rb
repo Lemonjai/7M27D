@@ -41,11 +41,11 @@ class WorksController < ApplicationController
 
   private
     def work_params
-      params.require(:work).permit(:title, :content, :img)
+      params.require(:work).permit(:title, :content, :img, :slug)
     end
 
     def find_post
-      @work = Work.find(params[:id])
+      @work = Work.friendly.find(params[:id])
     end
 
 end
