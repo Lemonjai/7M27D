@@ -7,13 +7,15 @@
 </div> 
 
 <div class="left-col">
-  <p><%= link_to "Back", works_path %></p>
   <h2><%= @work.title %></h2>
   <div class="post">
     <hr>
   </div>
+  
   <p class="date"><%= @work.created_at.strftime('%A, %B, %d') %></p>
   <p><%= markdown @work.content %></p>
+  <p class="date" ><%= link_to "Back", works_path %></p>
+
   <div class="post">
     <hr>
   </div>
@@ -30,3 +32,4 @@
 </div>
 
 <div class="clearfix"></div>
+

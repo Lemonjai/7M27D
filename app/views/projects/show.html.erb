@@ -1,19 +1,22 @@
 <div class="clearfix"></div>
 <div class="clearfix"></div>
 <div class="clearfix"></div>
+<div class="clearfix"></div>
 
 <div class="sidebar">
     <%= image_tag @project.img %>
 </div> 
 
 <div class="left-col">
-  <p><%= link_to "Back", projects_path %></p>
   <h2><%= @project.title %></h2>
   <div class="post">
     <hr>
   </div>
+  
   <p class="date"><%= @project.created_at.strftime('%A, %B, %d') %></p>
   <p><%= markdown @project.content %></p>
+  <p class="date" ><%= link_to "Back", projects_path %></p>
+
   <div class="post">
     <hr>
   </div>
