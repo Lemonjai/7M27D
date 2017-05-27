@@ -2,18 +2,18 @@
 <div class="clearfix"></div>
 <div class="clearfix"></div>
 
-<div id="posts_wrapper" class="skinny_wrapper">
-  <div class="post">
-    <p class="date"><%= @project.created_at.strftime('%A, %B, %d') %></p>
-    <h1><%= @project.title %></h1>
-    <hr>
-    <p><%= @work.img %></p>
-  </div>
+<div class="sidebar">
+    <%= image_tag @project.img %>
+</div> 
 
-  <div id="content">
-    <p><%= markdown @project.content %></p>
+<div class="left-col">
+  <p><%= link_to "Back", projects_path %></p>
+  <h2><%= @project.title %></h2>
+  <div class="post">
+    <hr>
   </div>
-  
+  <p class="date"><%= @project.created_at.strftime('%A, %B, %d') %></p>
+  <p><%= markdown @project.content %></p>
   <div class="post">
     <hr>
   </div>
@@ -28,4 +28,6 @@
   <%= link_to "Edit", edit_project_path(@project) %>
   <%= link_to "Delete", project_path(@project), method: :delete, data: {confirm: "Are you sure you wanted to delete this post?"} %>
 </div>
+
+<div class="clearfix"></div>
 

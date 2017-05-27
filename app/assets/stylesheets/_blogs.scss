@@ -53,6 +53,14 @@ $border: #E9E9E9;
       color: $dark;
     }
   }
+
+  img{
+    display: block;
+    width: 20%;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+  }
 }
 
 #share_box{
