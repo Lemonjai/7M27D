@@ -31,42 +31,23 @@
 
   <h2 id="title_padding">Work</h2>
   <hr id="under_padding" width="3%">
-  <section class="one-third-work">
-    <%= image_tag "wood-coffee-iphone-notebook.jpg" %>
-  </section>
-  <section class="one-third-work">
-    <%= image_tag "pexels-photo.jpg" %>
-  </section>
-  <section class="one-third-work">
-    <%= image_tag "pexels-photo-1.jpg" %>
-  </section>
-  <section class="one-third-work">
-    <%= image_tag "pexels-photo-2.jpg" %>
-  </section>
-  <section class="one-third-work">
-    <%= image_tag "pexels-photo-3.jpg" %>
-  </section>
-  <section class="one-third-work">
-    <%= image_tag "pexels-photo-5.jpg" %>
-  </section>
+
+  <% @works.each do |work| %>
+    <section class="one-third-work">
+      <%= link_to (image_tag work.img), work %>
+    </section>
+  <% end %>
   
 <a href="/#proj" id="proj"></a>
 <div class="clearfix"></div>
  
   <h2 id="title_padding">Project</h2>
   <hr id="under_padding" width="4%">
-  <section class="one-half-proj">
-    <%= image_tag"wood-coffee-iphone-notebook.jpg" %>
-  </section>
-  <section class="one-half-proj">
-    <%= image_tag"pexels-photo.jpg" %>
-  </section>
-  <section class="one-half-proj">
-    <%= image_tag"pexels-photo-1.jpg" %>
-  </section>
-  <section class="one-half-proj">
-    <%= image_tag"pexels-photo-2.jpg" %>
-  </section>
+  <% @projects.each do |project| %>
+    <section class="one-half-proj">
+      <%= link_to (image_tag project.img), project %>
+    </section>
+  <% end %>
  
 <a href="/#blog" id="blog"></a>
 <div class="clearfix"></div>
