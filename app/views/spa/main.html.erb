@@ -35,6 +35,9 @@
   <% @works.each do |work| %>
     <section class="one-third-work">
       <%= link_to (image_tag work.img), work %>
+    
+        <h3 style="text-align: center; position: relative; top: -150px; color: #9a9da4; "><%= work.title %></h3>
+     
     </section>
   <% end %>
   

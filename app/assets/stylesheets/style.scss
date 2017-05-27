@@ -101,10 +101,15 @@ img{
   width: 29.3333%;
   padding: 2%;
   float: left;
+
 }
 
 .one-third-work:hover{
   opacity: .6;
+}
+
+.one-third-work .desc:hover{
+  display: block;
 }
 
 .one-half-proj{
