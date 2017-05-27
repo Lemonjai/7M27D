@@ -25,7 +25,9 @@
     <a href="#"><i class="fa fa-google-plus"></i></a>
   </div>
 
-  <%= link_to "Edit", edit_blog_path(@blog) %>
-  <%= link_to "Delete", blog_path(@blog), method: :delete, data: {confirm: "Are you sure you wanted to delete this post?"} %>
+  <% if user_signed_in? %>
+    <%= link_to "Edit", edit_blog_path(@blog) %>
+    <%= link_to "Delete", blog_path(@blog), method: :delete, data: {confirm: "Are you sure you wanted to delete this post?"} %>
+  <% end %>
 </div>
 

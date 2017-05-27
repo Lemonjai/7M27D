@@ -78,6 +78,25 @@ img{
 
 }
 
+#share_box{
+  text-align: center;
+}
+
+#share_box p{
+  padding: 0 0 1em 0;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #424652;
+  font-size: .8em;
+}
+
+#share_box i{
+  color: #424652;
+  padding: 1em 1.5em;
+
+}
+
 .one-third-work{
   width: 29.3333%;
   padding: 2%;
@@ -95,6 +114,10 @@ img{
 }
 
 .one-third-work:hover{
+  opacity: .6;
+}
+
+.one-half-proj:hover{
   opacity: .6;
 }
 
