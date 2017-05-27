@@ -10,11 +10,11 @@ header{
   cursor: pointer;
   padding: .7em 1em;
   color: white;
-  float: left;
+  position: absolute;
 }
 .banner{
   padding-top: .1em;
-  float: left;
+  
   color: #FFF;
   display: none;
 }

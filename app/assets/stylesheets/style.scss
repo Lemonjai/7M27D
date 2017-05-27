@@ -19,6 +19,7 @@ html, body {
   padding: 0;
   height:100%;
   width: 100%;
+  background-color: #FAF7F8;
 }
 
 .clearfix{
@@ -195,5 +196,7 @@ img{
 
   .banner{
     padding-top: 0.2em;
+    display: block;
+    text-align: center;
   }
 }
